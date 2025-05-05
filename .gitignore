@@ -1,25 +1,45 @@
-*.class
+# macOS / Windows cruft
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Package Files #
-*.jar
-*.war
+# Editor-specific
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+*.code-workspace
 
-# gwt caches and compiled units #
-war/gwt_bree/
-gwt-unitCache/
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
 
-# boilerplate generated classes #
-.apt_generated/
+# Dependency directories
+node_modules/
+jspm_packages/
 
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
+# Build outputs
+dist/
+build/
+public/          # if you output here locally but deploy /docs or /
 
-#compilation logs
-.gwt/
+# Static-site generators (uncomment if you use one)
+# .jekyll-cache/
+# _site/
+# .hugo_build/
+# resources/_gen/
 
-#gwt junit compilation files
-www-test/
+# Svelte / Next / Nuxt artefacts
+.next/
+.nuxt/
+.svelte-kit/
+.svelte-kit-output/
 
-#old GWT (1.5) created this dir
-.gwt-tmp/
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
